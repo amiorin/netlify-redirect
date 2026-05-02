@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "https://bigconfig.ai/:splat"
+  to = "https://www.bigconfig.ai/:splat"
   status = 302
   force = true

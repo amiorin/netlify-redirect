@@ -10,4 +10,6 @@ This repository exists solely to host a Netlify site whose only job is to 302-re
 
 The entire behavior lives in `netlify.toml`. Editing the `[[redirects]]` block changes where traffic goes; `:splat` preserves the original path. `force = true` makes the redirect win over any static file that might otherwise be served.
 
+`index.html` is a minimal HTML5 placeholder so Netlify's deploy always has a file to publish. It's never actually served — the wildcard redirect catches every request first — so don't bother adding real content to it.
+
 Deployment is whatever Netlify site this repo is connected to — pushing to the default branch publishes the new config.
